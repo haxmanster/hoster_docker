@@ -15,6 +15,8 @@ else
     echo 'user:user1' | chpasswd
     usermod -s /bin/bash user
     usermod -aG sudo user
+    chown -R user:user /home/user
     chown -R user:user /var/www/html
 fi
+
 exit 0
