@@ -18,5 +18,10 @@ else
     chown -R user:user /home/user
     chown -R user:user /var/www/html
 fi
+while true
+do
+    echo "Press [CTRL+C] to stop.."
+    sleep 1
+done
 
 exit 0

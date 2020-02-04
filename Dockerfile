@@ -14,8 +14,7 @@ RUN apt-get install -y nano \
                        iproute2 \
                        fonts-powerline \
                        htop \
-                       curl \
-                       python-pip
+                       curl
 RUN service ssh start
 EXPOSE 22
 EXPOSE 80
