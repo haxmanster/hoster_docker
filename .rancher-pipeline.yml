@@ -1,0 +1,10 @@
+stages:
+- name: build_image
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./Dockerfile
+      buildContext: .
+      tag: ssh_docker
+      registry: 127.0.0.1:34689
+timeout: 60
+notification: {}
