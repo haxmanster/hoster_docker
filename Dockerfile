@@ -2,6 +2,7 @@ FROM ubuntu:latest
 MAINTAINER Grzegorz-wolyniec
 LABEL version="1.1" location="Poland" type="Ubuntu-Virtual-Docker"
 RUN apt-get update -y
+RUN DEBIAN_FRONTEND=noninteractive apt install -y tzdata
 RUN apt-get install -y nano \
                        openssh* \
                        vim \
