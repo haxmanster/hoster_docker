@@ -14,7 +14,8 @@ RUN apt-get install -y nano \
                        iproute2 \
                        fonts-powerline \
                        htop \
-                       curl
+                       curl \
+		       ncdu
 RUN service ssh start
 EXPOSE 22
 EXPOSE 80
